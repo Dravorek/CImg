@@ -12,7 +12,7 @@ add_library(CImg INTERFACE )#CImg.h)
 
 target_include_directories(CImg INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<INSTALL_INTERFACE:include/CImg>
+  $<INSTALL_INTERFACE:include>
 )
 
 #generate_export_header(CImg) #C: whut? seems to be only useful for shared library headers
